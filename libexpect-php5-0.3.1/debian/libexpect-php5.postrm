@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+if test "$1" = "purge"; then
+    if which ucf >/dev/null 2>&1; then
+        ucf --purge /etc/php5/conf.d/expect.ini
+    fi
+    rm -f /etc/php5/conf.d/expect.ini
+fi
+
+#DEBHELPER#
+
+exit 0

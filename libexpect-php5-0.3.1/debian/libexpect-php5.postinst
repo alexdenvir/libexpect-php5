@@ -1,0 +1,11 @@
+#!/bin/sh 
+
+set -e
+
+if test "$1" = "configure"; then
+    ucf /usr/share/php5-expect/expect.ini-dist /etc/php5/conf.d/expect.ini
+fi
+
+#DEBHELPER#
+
+exit 0
