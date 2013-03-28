@@ -1,9 +1,10 @@
-libexpect-php5 (0.3.1-2) unstable; urgency=low
+php5-expect (0.3.1-2) unstable; urgency=low
 
+  * Rename from libexpect-php5
   * Remove duplicate changelog
   * Add hardening-wrapper build dep
 
- -- Alex Denvir <coldfff@gmail.com>  Thu, 28 Mar 2013 10:08:42 +0000
+ -- Alex Denvir <coldfff@gmail.com>  Thu, 28 Mar 2013 15:40:42 +0000
 
 libexpect-php5 (0.3.1-1) unstable; urgency=low
 

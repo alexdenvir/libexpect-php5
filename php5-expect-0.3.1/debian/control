@@ -1,4 +1,4 @@
-Source: libexpect-php5
+Source: php5-expect
 Section: web
 Priority: optional
 Maintainer: Alex Denvir <coldfff@gmail.com>
@@ -7,8 +7,15 @@ Standards-Version: 3.9.3
 Homepage: http://pecl.php.net/expect
 
 Package: libexpect-php5
+Architecture: all
+Depends: php5-expect, ${misc:Depends}
+Description: transitional dummy package
+ This is a transitional dummy package. It can safely be removed.
+
+Replaces: libexpect-php5 (<< 0.3.1-2)
+Breaks: libexpect-php5 (<< 0.3.1-2)
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ucf
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: expect module for PHP 5
  This extension allows PHP to interact with processes through PTY,
  using expect library.

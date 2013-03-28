@@ -46,11 +46,11 @@ install: build
 	dh_installdirs
 
 	cd build-php5 && \
-	$(MAKE) INSTALL_ROOT=$(CURDIR)/debian/libexpect-php5 install
+	$(MAKE) INSTALL_ROOT=$(CURDIR)/debian/php5-expect install
 	chmod a+x debian/dh_pecl5
-	DH_AUTOSCRIPTDIR=debian/ debian/dh_pecl5 -plibexpect-php5
-	install -o root -g root -m 0644 $(CURDIR)/debian/lintian $(CURDIR)/debian/libexpect-php5/usr/share/lintian/overrides/libexpect-php5
-        echo "extension=expect.so" > $(CURDIR)/debian/libweakref-php5/etc/php5/mods-available/expect.ini
+	DH_AUTOSCRIPTDIR=debian/ debian/dh_pecl5 -pphp5-expect
+	install -o root -g root -m 0644 $(CURDIR)/debian/lintian $(CURDIR)/debian/php5-expect/usr/share/lintian/overrides/php5-expect
+        echo "extension=expect.so" > $(CURDIR)/debian/php5-expect/etc/php5/mods-available/expect.ini
 
 binary-indep: build install
 

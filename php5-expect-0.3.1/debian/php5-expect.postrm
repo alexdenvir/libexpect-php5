@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "remove" -o "$1" = "purge" ]; then
+    if [ -f /usr/sbin/php5dismod ]; then
+        php5dismod expect
+    fi
+fi
+
+#DEBHELPER#
+
+exit 0
