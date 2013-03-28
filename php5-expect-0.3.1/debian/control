@@ -8,7 +8,7 @@ Homepage: http://pecl.php.net/expect
 
 Package: libexpect-php5
 Architecture: all
-Depends: php5-expect
+Depends: php5-expect, ${misc:Depends}
 Description: transitional dummy package
  This is a transitional dummy package. It can safely be removed.
 
