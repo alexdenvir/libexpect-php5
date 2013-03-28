@@ -1,9 +1,9 @@
 Source: libexpect-php5
 Section: web
 Priority: optional
-Maintainer: Alex Denvir <coldfff@blueyonder.co.uk>
-Build-Depends: debhelper (>= 7), php5-dev, expect-dev
-Standards-Version: 3.9.2
+Maintainer: Alex Denvir <coldfff@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), php5-dev, expect-dev, hardening-wrapper
+Standards-Version: 3.9.3
 Homepage: http://pecl.php.net/expect
 
 Package: libexpect-php5
