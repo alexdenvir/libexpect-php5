@@ -1,5 +1,6 @@
-libexpect-php5 (0.3.1-2) unstable; urgency=low
+php5-expect (0.3.1-2) unstable; urgency=low
 
+  * Rename package from libexpect-php5
   * Remove duplicate changelog
   * Add hardening-wrapper build dep
 
